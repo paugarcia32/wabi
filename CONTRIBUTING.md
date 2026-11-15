@@ -39,10 +39,7 @@ Open an issue with the **Port request** template first, so we can check nobody e
 
 ### Adding a port
 
-- Put everything in `ports/<app>/`.
-- Use palette roles, not raw hex values, so the port follows palette changes.
-- Follow the same roles as the other ports: keywords orange, functions blue, strings green, types yellow, constants purple, comments in the comment colour.
-- Add a `README.md` with install steps, and a row in the ports table of the main README.
+Follow **[Creating a port](docs/port-creation.md)**: folder layout, template syntax, testing checklist and what to document. Use the **[style guide](docs/style-guide.md)** to decide which colour goes where.
 
 ## Palette changes
 
