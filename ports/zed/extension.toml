@@ -1,0 +1,7 @@
+id = "wabi"
+name = "Wabi"
+version = "0.1.0"
+schema_version = 1
+authors = ["paugarcia32"]
+description = "A minimal, calm and warm colour theme, in dark and light."
+repository = "https://github.com/paugarcia32/wabi"

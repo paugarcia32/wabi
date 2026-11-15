@@ -39,9 +39,9 @@ In both variants, all text colours meet WCAG AA (≥ 4.5:1) against `bg0`.
 | Platform | Status |
 | --- | --- |
 | [Alacritty](ports/alacritty) | ✅ |
+| [Zed](ports/zed) | ✅ |
 | Nvim | planned |
 | VSCode / Cursor | planned |
-| Zed | planned |
 | Obsidian | planned |
 
 ## Structure
