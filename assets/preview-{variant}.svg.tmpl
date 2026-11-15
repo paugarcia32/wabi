@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="424" viewBox="0 0 840 424" role="img" aria-label="{{name}} {{Variant}} code preview">
+  <title>{{name}} {{Variant}}: code preview</title>
+  <!-- Generated from palette/palette.json by generator/build.js. Do not edit by hand. -->
+  <defs><clipPath id="win"><rect width="840" height="424" rx="12"/></clipPath></defs>
+  <g clip-path="url(#win)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">
+  <rect width="840" height="424" fill="{{bg0}}"/>
+  <!-- title bar and tabs -->
+  <rect width="840" height="36" fill="{{bg0}}"/>
+  <circle cx="22" cy="18" r="6" fill="{{red}}"/><circle cx="42" cy="18" r="6" fill="{{yellow}}"/><circle cx="62" cy="18" r="6" fill="{{green}}"/>
+  <text x="420" y="23" fill="{{comment}}" font-family="ui-sans-serif, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle">wabi — {{Variant}}</text>
+  <rect y="36" width="840" height="1" fill="{{bg2}}"/>
+  <rect x="0" y="37" width="140" height="34" fill="{{bg0}}"/>
+  <rect x="0" y="37" width="140" height="2" fill="{{orange}}"/>
+  <text x="18" y="59" fill="{{fg0}}" font-family="ui-sans-serif, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="12">theme.ts</text>
+  <text x="158" y="59" fill="{{fg2}}" font-family="ui-sans-serif, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="12">palette.json</text>
+  <rect y="71" width="840" height="1" fill="{{bg2}}"/>
+  <!-- current line and cursor -->
+  <rect x="0" y="280" width="840" height="24" fill="{{bg1}}"/>
+  <rect x="70" y="282" width="2" height="20" fill="{{orange}}"/>
+  <text x="52" y="100" fill="{{comment}}" font-size="13" text-anchor="end">1</text>
+  <text x="72" y="100" xml:space="preserve"><tspan fill="{{comment}}" font-style="italic">// Wabi — calm, warm, minimal</tspan></text>
+  <text x="52" y="124" fill="{{comment}}" font-size="13" text-anchor="end">2</text>
+  <text x="72" y="124" xml:space="preserve"><tspan fill="{{orange}}">import</tspan><tspan fill="{{fg2}}"> { </tspan><tspan fill="{{fg}}">readFile</tspan><tspan fill="{{fg2}}"> } </tspan><tspan fill="{{orange}}">from</tspan><tspan fill="{{fg}}"> </tspan><tspan fill="{{green}}">"node:fs/promises"</tspan><tspan fill="{{fg2}}">;</tspan></text>
+  <text x="52" y="148" fill="{{comment}}" font-size="13" text-anchor="end">3</text>
+  <text x="52" y="172" fill="{{comment}}" font-size="13" text-anchor="end">4</text>
+  <text x="72" y="172" xml:space="preserve"><tspan fill="{{orange}}">type</tspan><tspan fill="{{fg}}"> </tspan><tspan fill="{{yellow}}">Variant</tspan><tspan fill="{{fg}}"> </tspan><tspan fill="{{fg1}}">=</tspan><tspan fill="{{fg}}"> </tspan><tspan fill="{{green}}">"dark"</tspan><tspan fill="{{fg}}"> </tspan><tspan fill="{{fg1}}">|</tspan><tspan fill="{{fg}}"> </tspan><tspan fill="{{green}}">"light"</tspan><tspan fill="{{fg2}}">;</tspan></text>
+  <text x="52" y="196" fill="{{comment}}" font-size="13" text-anchor="end">5</text>
+  <text x="72" y="196" xml:space="preserve"><tspan fill="{{orange}}">const</tspan><tspan fill="{{fg}}"> MAX_RETRIES </tspan><tspan fill="{{fg1}}">=</tspan><tspan fill="{{fg}}"> </tspan><tspan fill="{{purple}}">3</tspan><tspan fill="{{fg2}}">;</tspan></text>
+  <text x="52" y="220" fill="{{comment}}" font-size="13" text-anchor="end">6</text>
+  <text x="52" y="244" fill="{{comment}}" font-size="13" text-anchor="end">7</text>
+  <text x="72" y="244" xml:space="preserve"><tspan fill="{{fg2}}" font-style="italic">/** Load a theme file and parse it. */</tspan></text>
+  <text x="52" y="268" fill="{{comment}}" font-size="13" text-anchor="end">8</text>
+  <text x="72" y="268" xml:space="preserve"><tspan fill="{{orange}}">export</tspan><tspan fill="{{fg}}"> </tspan><tspan fill="{{orange}}">async</tspan><tspan fill="{{fg}}"> </tspan><tspan fill="{{orange}}">function</tspan><tspan fill="{{fg}}"> </tspan><tspan fill="{{blue}}">loadTheme</tspan><tspan fill="{{fg2}}">(</tspan><tspan fill="{{fg1}}">name</tspan><tspan fill="{{fg2}}">: </tspan><tspan fill="{{yellow}}">string</tspan><tspan fill="{{fg2}}">, </tspan><tspan fill="{{fg1}}">variant</tspan><tspan fill="{{fg2}}">: </tspan><tspan fill="{{yellow}}">Variant</tspan><tspan fill="{{fg2}}">): </tspan><tspan fill="{{yellow}}">Promise</tspan><tspan fill="{{fg2}}">&lt;</tspan><tspan fill="{{yellow}}">Theme</tspan><tspan fill="{{fg2}}">&gt; {</tspan></text>
+  <text x="52" y="292" fill="{{fg1}}" font-size="13" text-anchor="end">9</text>
+  <text x="72" y="292" xml:space="preserve"><tspan fill="{{fg}}">  </tspan><tspan fill="{{orange}}">const</tspan><tspan fill="{{fg}}"> path </tspan><tspan fill="{{fg1}}">=</tspan><tspan fill="{{fg}}"> </tspan><tspan fill="{{green}}">`themes/</tspan><tspan fill="{{orange}}">${</tspan><tspan fill="{{fg}}">name</tspan><tspan fill="{{orange}}">}</tspan><tspan fill="{{green}}">-</tspan><tspan fill="{{orange}}">${</tspan><tspan fill="{{fg}}">variant</tspan><tspan fill="{{orange}}">}</tspan><tspan fill="{{green}}">.json`</tspan><tspan fill="{{fg2}}">;</tspan></text>
+  <text x="52" y="316" fill="{{comment}}" font-size="13" text-anchor="end">10</text>
+  <text x="72" y="316" xml:space="preserve"><tspan fill="{{fg}}">  </tspan><tspan fill="{{orange}}">const</tspan><tspan fill="{{fg}}"> raw </tspan><tspan fill="{{fg1}}">=</tspan><tspan fill="{{fg}}"> </tspan><tspan fill="{{orange}}">await</tspan><tspan fill="{{fg}}"> </tspan><tspan fill="{{blue}}">readFile</tspan><tspan fill="{{fg2}}">(</tspan><tspan fill="{{fg}}">path</tspan><tspan fill="{{fg2}}">, </tspan><tspan fill="{{green}}">"utf8"</tspan><tspan fill="{{fg2}}">);</tspan></text>
+  <text x="52" y="340" fill="{{comment}}" font-size="13" text-anchor="end">11</text>
+  <text x="72" y="340" xml:space="preserve"><tspan fill="{{fg}}">  </tspan><tspan fill="{{orange}}">if</tspan><tspan fill="{{fg2}}"> (</tspan><tspan fill="{{fg1}}">!</tspan><tspan fill="{{fg}}">raw</tspan><tspan fill="{{fg2}}">) </tspan><tspan fill="{{orange}}">throw</tspan><tspan fill="{{fg}}"> </tspan><tspan fill="{{orange}}">new</tspan><tspan fill="{{fg}}"> </tspan><tspan fill="{{yellow}}">Error</tspan><tspan fill="{{fg2}}">(</tspan><tspan fill="{{green}}">"theme not found"</tspan><tspan fill="{{fg2}}">);</tspan></text>
+  <text x="52" y="364" fill="{{comment}}" font-size="13" text-anchor="end">12</text>
+  <text x="72" y="364" xml:space="preserve"><tspan fill="{{fg}}">  </tspan><tspan fill="{{orange}}">return</tspan><tspan fill="{{fg}}"> </tspan><tspan fill="{{aqua}}">JSON</tspan><tspan fill="{{fg2}}">.</tspan><tspan fill="{{blue}}">parse</tspan><tspan fill="{{fg2}}">(</tspan><tspan fill="{{fg}}">raw</tspan><tspan fill="{{fg2}}">) </tspan><tspan fill="{{orange}}">as</tspan><tspan fill="{{fg}}"> </tspan><tspan fill="{{yellow}}">Theme</tspan><tspan fill="{{fg2}}">;</tspan></text>
+  <text x="52" y="388" fill="{{comment}}" font-size="13" text-anchor="end">13</text>
+  <text x="72" y="388" xml:space="preserve"><tspan fill="{{fg2}}">}</tspan></text>
+  </g>
+  <rect x="0.5" y="0.5" width="839" height="423" rx="12" fill="none" stroke="{{bg3}}"/>
+</svg>

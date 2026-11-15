@@ -8,7 +8,7 @@ By taking part you agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ```
 palette/palette.json   every colour, for every variant: the single source of truth
-generator/build.js     renders every ports/**/*.tmpl from the palette
+generator/build.js     renders every ports/**/*.tmpl and assets/*.tmpl from the palette
 ports/<app>/           one folder per app: templates, generated files, README
 ```
 

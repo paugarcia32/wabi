@@ -48,9 +48,9 @@ In both variants, all text colours meet WCAG AA (≥ 4.5:1) against `bg0`.
 
 ```
 palette/palette.json   single source of truth
-generator/build.js     renders every ports/**/*.tmpl from the palette
+generator/build.js     renders every ports/**/*.tmpl and assets/*.tmpl from the palette
 ports/<platform>/      one folder per platform
-preview/               screenshots and sample files
+assets/                logo, palette and preview images (generated)
 ```
 
 ## Development

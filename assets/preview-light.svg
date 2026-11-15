@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="424" viewBox="0 0 840 424" role="img" aria-label="Wabi Light code preview">
+  <title>Wabi Light: code preview</title>
+  <!-- Generated from palette/palette.json by generator/build.js. Do not edit by hand. -->
+  <defs><clipPath id="win"><rect width="840" height="424" rx="12"/></clipPath></defs>
+  <g clip-path="url(#win)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">
+  <rect width="840" height="424" fill="#faf9f5"/>
+  <!-- title bar and tabs -->
+  <rect width="840" height="36" fill="#faf9f5"/>
+  <circle cx="22" cy="18" r="6" fill="#b0464f"/><circle cx="42" cy="18" r="6" fill="#8f661c"/><circle cx="62" cy="18" r="6" fill="#5c703e"/>
+  <text x="420" y="23" fill="#6d6a63" font-family="ui-sans-serif, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle">wabi — Light</text>
+  <rect y="36" width="840" height="1" fill="#e8e6dc"/>
+  <rect x="0" y="37" width="140" height="34" fill="#faf9f5"/>
+  <rect x="0" y="37" width="140" height="2" fill="#ab5134"/>
+  <text x="18" y="59" fill="#141413" font-family="ui-sans-serif, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="12">theme.ts</text>
+  <text x="158" y="59" fill="#5f5c55" font-family="ui-sans-serif, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="12">palette.json</text>
+  <rect y="71" width="840" height="1" fill="#e8e6dc"/>
+  <!-- current line and cursor -->
+  <rect x="0" y="280" width="840" height="24" fill="#f2f0e8"/>
+  <rect x="70" y="282" width="2" height="20" fill="#ab5134"/>
+  <text x="52" y="100" fill="#6d6a63" font-size="13" text-anchor="end">1</text>
+  <text x="72" y="100" xml:space="preserve"><tspan fill="#6d6a63" font-style="italic">// Wabi — calm, warm, minimal</tspan></text>
+  <text x="52" y="124" fill="#6d6a63" font-size="13" text-anchor="end">2</text>
+  <text x="72" y="124" xml:space="preserve"><tspan fill="#ab5134">import</tspan><tspan fill="#5f5c55"> { </tspan><tspan fill="#2b2a27">readFile</tspan><tspan fill="#5f5c55"> } </tspan><tspan fill="#ab5134">from</tspan><tspan fill="#2b2a27"> </tspan><tspan fill="#5c703e">"node:fs/promises"</tspan><tspan fill="#5f5c55">;</tspan></text>
+  <text x="52" y="148" fill="#6d6a63" font-size="13" text-anchor="end">3</text>
+  <text x="52" y="172" fill="#6d6a63" font-size="13" text-anchor="end">4</text>
+  <text x="72" y="172" xml:space="preserve"><tspan fill="#ab5134">type</tspan><tspan fill="#2b2a27"> </tspan><tspan fill="#8f661c">Variant</tspan><tspan fill="#2b2a27"> </tspan><tspan fill="#45433e">=</tspan><tspan fill="#2b2a27"> </tspan><tspan fill="#5c703e">"dark"</tspan><tspan fill="#2b2a27"> </tspan><tspan fill="#45433e">|</tspan><tspan fill="#2b2a27"> </tspan><tspan fill="#5c703e">"light"</tspan><tspan fill="#5f5c55">;</tspan></text>
+  <text x="52" y="196" fill="#6d6a63" font-size="13" text-anchor="end">5</text>
+  <text x="72" y="196" xml:space="preserve"><tspan fill="#ab5134">const</tspan><tspan fill="#2b2a27"> MAX_RETRIES </tspan><tspan fill="#45433e">=</tspan><tspan fill="#2b2a27"> </tspan><tspan fill="#7c5c8c">3</tspan><tspan fill="#5f5c55">;</tspan></text>
+  <text x="52" y="220" fill="#6d6a63" font-size="13" text-anchor="end">6</text>
+  <text x="52" y="244" fill="#6d6a63" font-size="13" text-anchor="end">7</text>
+  <text x="72" y="244" xml:space="preserve"><tspan fill="#5f5c55" font-style="italic">/** Load a theme file and parse it. */</tspan></text>
+  <text x="52" y="268" fill="#6d6a63" font-size="13" text-anchor="end">8</text>
+  <text x="72" y="268" xml:space="preserve"><tspan fill="#ab5134">export</tspan><tspan fill="#2b2a27"> </tspan><tspan fill="#ab5134">async</tspan><tspan fill="#2b2a27"> </tspan><tspan fill="#ab5134">function</tspan><tspan fill="#2b2a27"> </tspan><tspan fill="#3e6b99">loadTheme</tspan><tspan fill="#5f5c55">(</tspan><tspan fill="#45433e">name</tspan><tspan fill="#5f5c55">: </tspan><tspan fill="#8f661c">string</tspan><tspan fill="#5f5c55">, </tspan><tspan fill="#45433e">variant</tspan><tspan fill="#5f5c55">: </tspan><tspan fill="#8f661c">Variant</tspan><tspan fill="#5f5c55">): </tspan><tspan fill="#8f661c">Promise</tspan><tspan fill="#5f5c55">&lt;</tspan><tspan fill="#8f661c">Theme</tspan><tspan fill="#5f5c55">&gt; {</tspan></text>
+  <text x="52" y="292" fill="#45433e" font-size="13" text-anchor="end">9</text>
+  <text x="72" y="292" xml:space="preserve"><tspan fill="#2b2a27">  </tspan><tspan fill="#ab5134">const</tspan><tspan fill="#2b2a27"> path </tspan><tspan fill="#45433e">=</tspan><tspan fill="#2b2a27"> </tspan><tspan fill="#5c703e">`themes/</tspan><tspan fill="#ab5134">${</tspan><tspan fill="#2b2a27">name</tspan><tspan fill="#ab5134">}</tspan><tspan fill="#5c703e">-</tspan><tspan fill="#ab5134">${</tspan><tspan fill="#2b2a27">variant</tspan><tspan fill="#ab5134">}</tspan><tspan fill="#5c703e">.json`</tspan><tspan fill="#5f5c55">;</tspan></text>
+  <text x="52" y="316" fill="#6d6a63" font-size="13" text-anchor="end">10</text>
+  <text x="72" y="316" xml:space="preserve"><tspan fill="#2b2a27">  </tspan><tspan fill="#ab5134">const</tspan><tspan fill="#2b2a27"> raw </tspan><tspan fill="#45433e">=</tspan><tspan fill="#2b2a27"> </tspan><tspan fill="#ab5134">await</tspan><tspan fill="#2b2a27"> </tspan><tspan fill="#3e6b99">readFile</tspan><tspan fill="#5f5c55">(</tspan><tspan fill="#2b2a27">path</tspan><tspan fill="#5f5c55">, </tspan><tspan fill="#5c703e">"utf8"</tspan><tspan fill="#5f5c55">);</tspan></text>
+  <text x="52" y="340" fill="#6d6a63" font-size="13" text-anchor="end">11</text>
+  <text x="72" y="340" xml:space="preserve"><tspan fill="#2b2a27">  </tspan><tspan fill="#ab5134">if</tspan><tspan fill="#5f5c55"> (</tspan><tspan fill="#45433e">!</tspan><tspan fill="#2b2a27">raw</tspan><tspan fill="#5f5c55">) </tspan><tspan fill="#ab5134">throw</tspan><tspan fill="#2b2a27"> </tspan><tspan fill="#ab5134">new</tspan><tspan fill="#2b2a27"> </tspan><tspan fill="#8f661c">Error</tspan><tspan fill="#5f5c55">(</tspan><tspan fill="#5c703e">"theme not found"</tspan><tspan fill="#5f5c55">);</tspan></text>
+  <text x="52" y="364" fill="#6d6a63" font-size="13" text-anchor="end">12</text>
+  <text x="72" y="364" xml:space="preserve"><tspan fill="#2b2a27">  </tspan><tspan fill="#ab5134">return</tspan><tspan fill="#2b2a27"> </tspan><tspan fill="#3d7566">JSON</tspan><tspan fill="#5f5c55">.</tspan><tspan fill="#3e6b99">parse</tspan><tspan fill="#5f5c55">(</tspan><tspan fill="#2b2a27">raw</tspan><tspan fill="#5f5c55">) </tspan><tspan fill="#ab5134">as</tspan><tspan fill="#2b2a27"> </tspan><tspan fill="#8f661c">Theme</tspan><tspan fill="#5f5c55">;</tspan></text>
+  <text x="52" y="388" fill="#6d6a63" font-size="13" text-anchor="end">13</text>
+  <text x="72" y="388" xml:space="preserve"><tspan fill="#5f5c55">}</tspan></text>
+  </g>
+  <rect x="0.5" y="0.5" width="839" height="423" rx="12" fill="none" stroke="#dcd9cd"/>
+</svg>
