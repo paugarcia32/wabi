@@ -2,9 +2,15 @@
 
 One theme with both variants: Obsidian's own light/dark switch picks between Wabi Light and Wabi Dark.
 
-## Install (from this repo)
+## Install
 
-Link this folder into your vault as `.obsidian/themes/Wabi` (rebuilds then apply without copying):
+Wabi is in Obsidian's community theme store: open **Settings → Appearance → Themes → Manage**, search for **Wabi**, then **Install and use**. Updates arrive automatically.
+
+Then pick Light, Dark or "Adapt to system" in **Settings → Appearance**.
+
+## Install from this repo (development)
+
+To try changes before they're released, link this folder into your vault as `.obsidian/themes/Wabi` (rebuilds then apply without copying). Uninstall the store version first: the store writes into that same folder, and through the link it would overwrite the generated files here.
 
 ```powershell
 cmd /c mklink /J "<vault>\.obsidian\themes\Wabi" "<repo>\ports\obsidian"
