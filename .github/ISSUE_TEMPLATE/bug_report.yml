@@ -1,0 +1,43 @@
+name: Bug report
+description: Something looks wrong in one of the ports
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: port
+    attributes:
+      label: Port
+      options:
+        - Alacritty
+        - Zed
+        - VSCode / Cursor
+        - Obsidian
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: variant
+    attributes:
+      label: Variant
+      options:
+        - Dark
+        - Light
+        - Both
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      placeholder: "e.g. VSCode 1.146.0"
+  - type: textarea
+    id: description
+    attributes:
+      label: What looks wrong?
+      description: What you expected, what you see instead, and where (file type, panel, plugin…).
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: Drag an image here if you can.

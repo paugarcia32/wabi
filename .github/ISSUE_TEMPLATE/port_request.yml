@@ -1,0 +1,21 @@
+name: Port request
+description: Ask for Wabi in a new app, or say you'd like to build it
+labels: ["port request"]
+body:
+  - type: input
+    id: app
+    attributes:
+      label: App
+      placeholder: "e.g. Neovim, Windows Terminal, Firefox"
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link to the app's theming docs
+  - type: checkboxes
+    id: build
+    attributes:
+      label: Contribution
+      options:
+        - label: I'd like to build this port myself

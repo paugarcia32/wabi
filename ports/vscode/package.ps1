@@ -47,7 +47,7 @@ $contentTypes = @"
 "@
 
 # Files that go into the extension: package.json, README and the generated themes (no templates).
-$files = @("package.json", "README.md") + (Get-ChildItem (Join-Path $root "themes") -Filter "*.json" | ForEach-Object { "themes/$($_.Name)" })
+$files = @("package.json", "README.md", "LICENSE") + (Get-ChildItem (Join-Path $root "themes") -Filter "*.json" | ForEach-Object { "themes/$($_.Name)" })
 
 $zip = [System.IO.Compression.ZipFile]::Open($vsix, "Create")
 try {

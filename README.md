@@ -63,3 +63,11 @@ node generator/build.js --check  # contrast report only
 ```
 
 Never edit generated files by hand: change `palette/palette.json` or a `.tmpl` template and rebuild.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) and the [Code of Conduct](CODE_OF_CONDUCT.md).
+
+## License
+
+[MIT](LICENSE)
