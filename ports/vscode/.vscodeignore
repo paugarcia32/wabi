@@ -1,0 +1,4 @@
+**/*.tmpl
+dist/**
+package.ps1
+.gitignore

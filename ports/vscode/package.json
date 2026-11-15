@@ -1,0 +1,30 @@
+{
+  "name": "wabi-theme",
+  "displayName": "Wabi",
+  "description": "A minimal, calm and warm colour theme, in dark and light.",
+  "version": "0.1.0",
+  "publisher": "paugarcia32",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": ["Themes"],
+  "keywords": ["theme", "color-theme", "dark", "light", "warm", "minimal", "calm"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paugarcia32/wabi"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Wabi Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/wabi-dark-color-theme.json"
+      },
+      {
+        "label": "Wabi Light",
+        "uiTheme": "vs",
+        "path": "./themes/wabi-light-color-theme.json"
+      }
+    ]
+  }
+}
