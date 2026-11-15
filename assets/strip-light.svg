@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="8" viewBox="0 0 700 8" role="img" aria-label="Wabi accent colours">
+  <!-- Generated from palette/palette.json by generator/build.js. Do not edit by hand. -->
+  <defs><clipPath id="round"><rect width="700" height="8" rx="4"/></clipPath></defs>
+  <g clip-path="url(#round)">
+  <rect x="0.00" width="50.50" height="8" fill="#b0464f"/>
+  <rect x="50.00" width="50.50" height="8" fill="#963740"/>
+  <rect x="100.00" width="50.50" height="8" fill="#ab5134"/>
+  <rect x="150.00" width="50.50" height="8" fill="#9a4529"/>
+  <rect x="200.00" width="50.50" height="8" fill="#8f661c"/>
+  <rect x="250.00" width="50.50" height="8" fill="#785412"/>
+  <rect x="300.00" width="50.50" height="8" fill="#5c703e"/>
+  <rect x="350.00" width="50.50" height="8" fill="#4b5d30"/>
+  <rect x="400.00" width="50.50" height="8" fill="#3d7566"/>
+  <rect x="450.00" width="50.50" height="8" fill="#2f6155"/>
+  <rect x="500.00" width="50.50" height="8" fill="#3e6b99"/>
+  <rect x="550.00" width="50.50" height="8" fill="#305982"/>
+  <rect x="600.00" width="50.50" height="8" fill="#7c5c8c"/>
+  <rect x="650.00" width="50.50" height="8" fill="#684b77"/>
+  </g>
+</svg>

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Renders every `*.tmpl` file under ports/ from the palette.
+// Renders every `*.tmpl` file under ports/ and assets/ from the palette.
 //
 //   {{key}}        -> colour value from the variant, e.g. "#1b1a18"
 //   {{key.hex}}    -> colour without the leading "#", e.g. "1b1a18"
@@ -83,7 +83,7 @@ for (const [id, colours] of Object.entries(palette.variants)) {
 
 if (process.argv.includes("--check")) process.exit(failed ? 1 : 0);
 
-const templates = findTemplates(path.join(root, "ports"));
+const templates = ["ports", "assets"].flatMap((d) => findTemplates(path.join(root, d)));
 console.log("");
 for (const tmpl of templates) {
   const source = fs.readFileSync(tmpl, "utf8");
