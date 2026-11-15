@@ -28,6 +28,7 @@
 
 <p align="center">
   <a href="https://github.com/paugarcia32/wabi/stargazers"><img src="https://img.shields.io/github/stars/paugarcia32/wabi?style=for-the-badge&logo=starship&label=stars&color=d97757&logoColor=faf9f5&labelColor=2e2c28" alt="Stars"/></a>
+  <a href="https://github.com/paugarcia32/wabi/releases/latest"><img src="https://img.shields.io/github/v/release/paugarcia32/wabi?style=for-the-badge&logo=github&label=release&color=7fa3cc&logoColor=faf9f5&labelColor=2e2c28" alt="Latest release"/></a>
   <a href="https://github.com/paugarcia32/wabi/issues"><img src="https://img.shields.io/github/issues/paugarcia32/wabi?style=for-the-badge&logo=gitbook&label=issues&color=d5a65e&logoColor=faf9f5&labelColor=2e2c28" alt="Open issues"/></a>
   <a href="LICENSE"><img src="https://img.shields.io/github/license/paugarcia32/wabi?style=for-the-badge&logo=opensourceinitiative&label=license&color=99a874&logoColor=faf9f5&labelColor=2e2c28" alt="License"/></a>
 </p>
