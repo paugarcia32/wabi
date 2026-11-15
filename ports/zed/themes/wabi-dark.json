@@ -7,7 +7,7 @@
       "name": "Wabi Dark",
       "appearance": "dark",
       "style": {
-        "background": "#23221f",
+        "background": "#1b1a18",
         "border": "#3b3934",
         "border.variant": "#2e2c28",
         "border.focused": "#7fa3cc80",
@@ -15,7 +15,7 @@
         "border.transparent": "#00000000",
         "border.disabled": "#2e2c28",
 
-        "surface.background": "#23221f",
+        "surface.background": "#1b1a18",
         "elevated_surface.background": "#23221f",
         "drop_target.background": "#d9775726",
 
@@ -43,14 +43,14 @@
         "icon.placeholder": "#8a877d",
         "icon.accent": "#d97757",
 
-        "status_bar.background": "#23221f",
-        "title_bar.background": "#23221f",
+        "status_bar.background": "#1b1a18",
+        "title_bar.background": "#1b1a18",
         "title_bar.inactive_background": "#141413",
         "toolbar.background": "#1b1a18",
-        "tab_bar.background": "#23221f",
-        "tab.inactive_background": "#23221f",
-        "tab.active_background": "#1b1a18",
-        "panel.background": "#23221f",
+        "tab_bar.background": "#1b1a18",
+        "tab.inactive_background": "#1b1a18",
+        "tab.active_background": "#23221f",
+        "panel.background": "#1b1a18",
         "panel.focused_border": "#d9775780",
         "pane.focused_border": "#d9775780",
         "pane_group.border": "#3b3934",
