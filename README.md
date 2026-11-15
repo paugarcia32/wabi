@@ -1,73 +1,127 @@
-# wabi
+<h3 align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.svg">
+    <img src="assets/logo-light.svg" width="120" alt="Wabi logo: an ensō in clay orange"/>
+  </picture>
+  <br/>
+  Wabi
+</h3>
 
-A minimal, calm and warm colour theme. Named after *wabi-sabi*: quiet, imperfect simplicity.
+<p align="center">
+  <a href="https://en.wikipedia.org/wiki/Wabi-sabi">/ˈwɑː.bi/</a>
+</p>
 
-Warm neutrals inspired by the Anthropic brand colours, a clay orange as the signature accent, and muted supporting colours — with Gruvbox and Monokai as references.
+<p align="center">
+  A minimal, calm and warm colour theme, in dark and light.
+</p>
 
-## Palette (dark)
+<p align="center">
+  <a href="#palette">Palette</a> · <a href="#ports">Ports</a> · <a href="#showcase">Showcase</a> · <a href="docs">Docs</a>
+</p>
 
-| Role | Hex | | Role | Hex |
-| --- | --- | --- | --- | --- |
-| `bg_dim` | `#141413` | | `orange` | `#d97757` |
-| `bg0` | `#1b1a18` | | `red` | `#d16a6f` |
-| `bg1` | `#23221f` | | `yellow` | `#d5a65e` |
-| `bg2` | `#2e2c28` | | `green` | `#99a874` |
-| `bg3` | `#3b3934` | | `aqua` | `#82aa9c` |
-| `bg4` | `#4d4a44` | | `blue` | `#7fa3cc` |
-| `fg` | `#e8e6dc` | | `purple` | `#ae92b8` |
-| `fg0` | `#faf9f5` | | `fg1` | `#c8c5b9` |
-| `fg2` | `#a19e94` | | `comment` | `#8a877d` |
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/strip-dark.svg">
+    <img src="assets/strip-light.svg" width="600" alt=""/>
+  </picture>
+</p>
 
-## Palette (light)
+<p align="center">
+  <a href="https://github.com/paugarcia32/wabi/stargazers"><img src="https://img.shields.io/github/stars/paugarcia32/wabi?style=for-the-badge&logo=starship&label=stars&color=d97757&logoColor=faf9f5&labelColor=2e2c28" alt="Stars"/></a>
+  <a href="https://github.com/paugarcia32/wabi/issues"><img src="https://img.shields.io/github/issues/paugarcia32/wabi?style=for-the-badge&logo=gitbook&label=issues&color=d5a65e&logoColor=faf9f5&labelColor=2e2c28" alt="Open issues"/></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/paugarcia32/wabi?style=for-the-badge&logo=opensourceinitiative&label=license&color=99a874&logoColor=faf9f5&labelColor=2e2c28" alt="License"/></a>
+</p>
 
-| Role | Hex | | Role | Hex |
-| --- | --- | --- | --- | --- |
-| `bg_dim` | `#efede4` | | `orange` | `#ab5134` |
-| `bg0` | `#faf9f5` | | `red` | `#b0464f` |
-| `bg1` | `#f2f0e8` | | `yellow` | `#8f661c` |
-| `bg2` | `#e8e6dc` | | `green` | `#5c703e` |
-| `bg3` | `#dcd9cd` | | `aqua` | `#3d7566` |
-| `bg4` | `#c9c5b8` | | `blue` | `#3e6b99` |
-| `fg` | `#2b2a27` | | `purple` | `#7c5c8c` |
-| `fg0` | `#141413` | | `fg1` | `#45433e` |
-| `fg2` | `#5f5c55` | | `comment` | `#6d6a63` |
+&nbsp;
 
-In both variants, all text colours meet WCAG AA (≥ 4.5:1) against `bg0`.
+Wabi takes its name from *wabi-sabi*, the Japanese idea of finding beauty in what is simple, quiet and imperfect. The theme follows that idea: warm neutrals, a calm background shared by the whole window, and a handful of muted accents around a clay orange, used for meaning rather than decoration.
+
+## Showcase
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/preview-dark.svg">
+  <img src="assets/preview-light.svg" alt="TypeScript code highlighted with Wabi"/>
+</picture>
+
+<details>
+<summary>Both variants side by side</summary>
+<br/>
+
+| Dark | Light |
+| --- | --- |
+| <img src="assets/preview-dark.svg" alt="Wabi Dark code preview"/> | <img src="assets/preview-light.svg" alt="Wabi Light code preview"/> |
+
+</details>
+
+## Palette
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/palette-dark.svg">
+  <img src="assets/palette-light.svg" alt="Wabi palette: backgrounds, text and accents with their hex values"/>
+</picture>
+
+<details>
+<summary>Both variants side by side</summary>
+<br/>
+
+| Dark | Light |
+| --- | --- |
+| <img src="assets/palette-dark.svg" alt="Wabi Dark palette"/> | <img src="assets/palette-light.svg" alt="Wabi Light palette"/> |
+
+</details>
+
+Every colour of both variants lives in [`palette/palette.json`](palette/palette.json). All text colours meet WCAG AA (at least 4.5:1) against the background. What each colour is for is in the [style guide](docs/style-guide.md).
 
 ## Ports
 
-| Platform | Status |
-| --- | --- |
-| [Alacritty](ports/alacritty) | ✅ |
-| [Zed](ports/zed) | ✅ |
-| [VSCode / Cursor](ports/vscode) | ✅ |
-| Nvim | planned |
-| [Obsidian](ports/obsidian) | ✅ |
+| App | Variants | Install |
+| --- | --- | --- |
+| [Alacritty](ports/alacritty) | Dark, Light | [Instructions](ports/alacritty/README.md) |
+| [Zed](ports/zed) | Dark, Light | [Instructions](ports/zed/README.md) |
+| [VSCode / Cursor](ports/vscode) | Dark, Light | [Instructions](ports/vscode/README.md) |
+| [Obsidian](ports/obsidian) | Dark, Light | [Instructions](ports/obsidian/README.md) |
+| Neovim | | Planned |
 
-## Structure
+Missing your app? [Request a port](https://github.com/paugarcia32/wabi/issues/new?template=port_request.yml), or build it yourself with the guide to [creating a port](docs/port-creation.md).
+
+## How it's built
+
+Every port is generated from one palette, so they always match:
 
 ```
-palette/palette.json   single source of truth
-generator/build.js     renders every ports/**/*.tmpl and assets/*.tmpl from the palette
-ports/<platform>/      one folder per platform
-assets/                logo, palette and preview images (generated)
+palette/palette.json   every colour, for every variant
+generator/build.js     renders ports/**/*.tmpl and assets/*.tmpl from the palette
+ports/<app>/           one folder per app: templates, generated theme files, README
+assets/                logo, palette and preview images (generated too)
+docs/                  style guide and port creation guide
 ```
 
-## Development
-
-Requires Node.js.
+With Node.js installed (no dependencies):
 
 ```bash
-node generator/build.js          # contrast report + regenerate all ports
+node generator/build.js          # contrast report + regenerate every port and image
 node generator/build.js --check  # contrast report only
 ```
 
-Never edit generated files by hand: change `palette/palette.json` or a `.tmpl` template and rebuild.
+Generated files are never edited by hand: change the palette or a `.tmpl` template and rebuild.
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) and the [Code of Conduct](CODE_OF_CONDUCT.md). The [docs](docs) have the [style guide](docs/style-guide.md) and a guide to [creating a port](docs/port-creation.md).
+Contributions are welcome, from a colour fix to a whole new port. Start with [CONTRIBUTING.md](CONTRIBUTING.md); the [docs](docs) have the [style guide](docs/style-guide.md) and the guide to [creating a port](docs/port-creation.md). Everyone taking part follows the [Code of Conduct](CODE_OF_CONDUCT.md).
+
+## Credits
+
+Inspired by the warm neutrals and clay orange of the Anthropic brand colours, with [Gruvbox](https://github.com/morhetz/gruvbox) and Monokai as references, and [Catppuccin](https://github.com/catppuccin/catppuccin) as the model for how to organise a multi-app theme.
 
 ## License
 
 [MIT](LICENSE)
+
+&nbsp;
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/wordmark-dark.svg">
+    <img src="assets/wordmark-light.svg" width="160" alt="Wabi"/>
+  </picture>
+</p>
