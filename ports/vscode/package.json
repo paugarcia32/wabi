@@ -5,6 +5,11 @@
   "version": "0.1.0",
   "publisher": "paugarcia32",
   "license": "MIT",
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#1b1a18",
+    "theme": "dark"
+  },
   "engines": {
     "vscode": "^1.70.0"
   },
@@ -18,8 +23,13 @@
     "light",
     "warm",
     "minimal",
-    "calm"
+    "calm",
+    "wabi-sabi"
   ],
+  "homepage": "https://github.com/paugarcia32/wabi",
+  "bugs": {
+    "url": "https://github.com/paugarcia32/wabi/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/paugarcia32/wabi"

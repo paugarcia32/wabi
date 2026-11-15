@@ -1,4 +1,5 @@
 **/*.tmpl
 dist/**
+images/preview-*.png
 package.ps1
 .gitignore
