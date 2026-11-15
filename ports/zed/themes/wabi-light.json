@@ -7,7 +7,7 @@
       "name": "Wabi Light",
       "appearance": "light",
       "style": {
-        "background": "#f2f0e8",
+        "background": "#faf9f5",
         "border": "#dcd9cd",
         "border.variant": "#e8e6dc",
         "border.focused": "#3e6b9980",
@@ -15,7 +15,7 @@
         "border.transparent": "#00000000",
         "border.disabled": "#e8e6dc",
 
-        "surface.background": "#f2f0e8",
+        "surface.background": "#faf9f5",
         "elevated_surface.background": "#f2f0e8",
         "drop_target.background": "#ab513426",
 
@@ -43,14 +43,14 @@
         "icon.placeholder": "#6d6a63",
         "icon.accent": "#ab5134",
 
-        "status_bar.background": "#f2f0e8",
-        "title_bar.background": "#f2f0e8",
+        "status_bar.background": "#faf9f5",
+        "title_bar.background": "#faf9f5",
         "title_bar.inactive_background": "#efede4",
         "toolbar.background": "#faf9f5",
-        "tab_bar.background": "#f2f0e8",
-        "tab.inactive_background": "#f2f0e8",
-        "tab.active_background": "#faf9f5",
-        "panel.background": "#f2f0e8",
+        "tab_bar.background": "#faf9f5",
+        "tab.inactive_background": "#faf9f5",
+        "tab.active_background": "#f2f0e8",
+        "panel.background": "#faf9f5",
         "panel.focused_border": "#ab513480",
         "pane.focused_border": "#ab513480",
         "pane_group.border": "#dcd9cd",
