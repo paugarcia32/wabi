@@ -2,7 +2,7 @@
 
 ## Install
 
-1. Copy `wabi-dark.toml` to your Alacritty config folder:
+1. Copy `wabi-dark.toml` (or `wabi-light.toml`) to your Alacritty config folder:
    - Windows: `%APPDATA%\alacritty\`
    - macOS / Linux: `~/.config/alacritty/`
 2. Import it in `alacritty.toml`:
@@ -19,4 +19,4 @@ Requires Alacritty 0.13+ (TOML config). On versions before 0.14, put `import` at
 ## Notes
 
 - Orange has no ANSI slot, so it's mapped to indexed colour **16** (bright orange on **17**).
-- Don't edit `wabi-dark.toml` directly — edit `palette/palette.json` or the `.tmpl` file and run `node generator/build.js`.
+- Don't edit `wabi-dark.toml` or `wabi-light.toml` directly — edit `palette/palette.json` or the `.tmpl` file and run `node generator/build.js`.

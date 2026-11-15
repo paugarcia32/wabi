@@ -18,7 +18,21 @@ Warm neutrals inspired by the Anthropic brand colours, a clay orange as the sign
 | `fg0` | `#faf9f5` | | `fg1` | `#c8c5b9` |
 | `fg2` | `#a19e94` | | `comment` | `#8a877d` |
 
-All text colours meet WCAG AA (≥ 4.5:1) against `bg0`.
+## Palette (light)
+
+| Role | Hex | | Role | Hex |
+| --- | --- | --- | --- | --- |
+| `bg_dim` | `#efede4` | | `orange` | `#ab5134` |
+| `bg0` | `#faf9f5` | | `red` | `#b0464f` |
+| `bg1` | `#f2f0e8` | | `yellow` | `#8f661c` |
+| `bg2` | `#e8e6dc` | | `green` | `#5c703e` |
+| `bg3` | `#dcd9cd` | | `aqua` | `#3d7566` |
+| `bg4` | `#c9c5b8` | | `blue` | `#3e6b99` |
+| `fg` | `#2b2a27` | | `purple` | `#7c5c8c` |
+| `fg0` | `#141413` | | `fg1` | `#45433e` |
+| `fg2` | `#5f5c55` | | `comment` | `#6d6a63` |
+
+In both variants, all text colours meet WCAG AA (≥ 4.5:1) against `bg0`.
 
 ## Ports
 
