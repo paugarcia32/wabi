@@ -1,20 +1,22 @@
 # Wabi for VSCode / Cursor
 
-Two themes: **Wabi Dark** and **Wabi Light**. Cursor uses the same extension.
+A minimal, calm and warm colour theme, in dark and light. Named after *wabi-sabi*: finding beauty in what is simple, quiet and imperfect.
 
-## Install (from this repo)
+![Wabi Dark](https://raw.githubusercontent.com/paugarcia32/wabi/main/ports/vscode/images/preview-dark.png)
 
-Build the `.vsix` package and install it (in VSCode, and in Cursor if its `cursor` command is available):
+![Wabi Light](https://raw.githubusercontent.com/paugarcia32/wabi/main/ports/vscode/images/preview-light.png)
 
-```powershell
-pwsh ports/vscode/package.ps1 -Install
-```
+- **Two themes**: **Wabi Dark** and **Wabi Light**.
+- **One flat background**: sidebars, panels and bars share the editor background; only menus and popups are lifted.
+- **Calm accents**: muted colours around a clay orange, used for meaning rather than decoration.
+- **Readable**: every text colour has at least 4.5:1 contrast against the background.
+- **Semantic highlighting**: languages with a language server (TypeScript, Rust, Python…) get richer colours.
 
-The script packs the extension by hand, so `vsce` isn't needed. The package lands in `ports/vscode/dist/`, which git ignores. Without `-Install` it only builds the file, which you can install with **Extensions: Install from VSIX…**.
+## Install
+
+Open the Extensions view, search for **Wabi**, and install it. Cursor, VSCodium and other editors that use Open VSX find it there under the same name.
 
 Then run **Preferences: Color Theme** and pick **Wabi Dark** or **Wabi Light**.
-
-Linking this folder into `~/.vscode/extensions` doesn't work: VSCode only loads extensions listed in its own `extensions.json`.
 
 To follow the system light/dark mode:
 
@@ -24,8 +26,19 @@ To follow the system light/dark mode:
 "workbench.preferredLightColorTheme": "Wabi Light"
 ```
 
-## Notes
+## More
 
-- Don't edit `themes/wabi-*-color-theme.json` directly: edit `palette/palette.json` or the `.tmpl` template and run `node generator/build.js`, then `pwsh ports/vscode/package.ps1 -Install` and **Developer: Reload Window**.
-- Semantic highlighting is on, so languages with a language server (TypeScript, Rust, Python…) get richer colours.
-- Publishing to the VS Marketplace and Open VSX (where Cursor installs from) will need a LICENSE file.
+Wabi is also available for Zed, Obsidian and Alacritty. The palette, the other ports and the issue tracker live in [paugarcia32/wabi](https://github.com/paugarcia32/wabi).
+
+## Development
+
+The themes are generated: don't edit `themes/wabi-*-color-theme.json` directly. Edit `palette/palette.json` or the `.tmpl` template, then from the repo root:
+
+```powershell
+node generator/build.js                    # regenerate the themes
+pwsh ports/vscode/package.ps1 -Install     # package with vsce and install in VSCode (and Cursor)
+```
+
+Then run **Developer: Reload Window**. The package lands in `ports/vscode/dist/`, which git ignores. Without `-Install` the script only builds the `.vsix`.
+
+Linking this folder into `~/.vscode/extensions` doesn't work: VSCode only loads extensions listed in its own `extensions.json`.
