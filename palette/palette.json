@@ -1,0 +1,97 @@
+{
+  "name": "Wabi",
+  "variants": {
+    "dark": {
+      "_comment": "Warm, calm dark variant. Neutrals derived from the Anthropic slate/ivory; accents muted around the clay orange.",
+
+      "bg_dim": "#141413",
+      "bg0": "#1b1a18",
+      "bg1": "#23221f",
+      "bg2": "#2e2c28",
+      "bg3": "#3b3934",
+      "bg4": "#4d4a44",
+
+      "fg0": "#faf9f5",
+      "fg": "#e8e6dc",
+      "fg1": "#c8c5b9",
+      "fg2": "#a19e94",
+      "comment": "#8a877d",
+
+      "orange": "#d97757",
+      "red": "#d16a6f",
+      "yellow": "#d5a65e",
+      "green": "#99a874",
+      "aqua": "#82aa9c",
+      "blue": "#7fa3cc",
+      "purple": "#ae92b8",
+
+      "bright_orange": "#e58d6f",
+      "bright_red": "#e0858a",
+      "bright_yellow": "#e3ba79",
+      "bright_green": "#adbb8a",
+      "bright_aqua": "#9abfb1",
+      "bright_blue": "#98b7d9",
+      "bright_purple": "#c2a8cb",
+
+      "accent": "#d97757",
+      "error": "#d16a6f",
+      "warning": "#d5a65e",
+      "info": "#7fa3cc",
+      "hint": "#82aa9c",
+      "git_added": "#99a874",
+      "git_modified": "#d5a65e",
+      "git_removed": "#d16a6f",
+
+      "ansi_black": "#2e2c28",
+      "ansi_bright_black": "#8a877d",
+      "ansi_white": "#c8c5b9",
+      "ansi_bright_white": "#faf9f5"
+    },
+    "light": {
+      "_comment": "Warm, calm light variant. Ivory paper background; accents darkened from the dark variant to keep AA contrast.",
+
+      "bg_dim": "#efede4",
+      "bg0": "#faf9f5",
+      "bg1": "#f2f0e8",
+      "bg2": "#e8e6dc",
+      "bg3": "#dcd9cd",
+      "bg4": "#c9c5b8",
+
+      "fg0": "#141413",
+      "fg": "#2b2a27",
+      "fg1": "#45433e",
+      "fg2": "#5f5c55",
+      "comment": "#6d6a63",
+
+      "orange": "#ab5134",
+      "red": "#b0464f",
+      "yellow": "#8f661c",
+      "green": "#5c703e",
+      "aqua": "#3d7566",
+      "blue": "#3e6b99",
+      "purple": "#7c5c8c",
+
+      "bright_orange": "#9a4529",
+      "bright_red": "#963740",
+      "bright_yellow": "#785412",
+      "bright_green": "#4b5d30",
+      "bright_aqua": "#2f6155",
+      "bright_blue": "#305982",
+      "bright_purple": "#684b77",
+
+      "accent": "#ab5134",
+      "error": "#b0464f",
+      "warning": "#8f661c",
+      "info": "#3e6b99",
+      "hint": "#3d7566",
+      "git_added": "#5c703e",
+      "git_modified": "#8f661c",
+      "git_removed": "#b0464f",
+
+      "ansi_black": "#45433e",
+      "ansi_bright_black": "#6d6a63",
+      "ansi_white": "#c9c5b8",
+      "ansi_bright_white": "#dcd9cd"
+    }
+  }
+}
