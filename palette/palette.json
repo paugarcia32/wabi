@@ -1,0 +1,46 @@
+{
+  "name": "Wabi",
+  "variants": {
+    "dark": {
+      "_comment": "Warm, calm dark variant. Neutrals derived from the Anthropic slate/ivory; accents muted around the clay orange.",
+
+      "bg_dim": "#141413",
+      "bg0": "#1b1a18",
+      "bg1": "#23221f",
+      "bg2": "#2e2c28",
+      "bg3": "#3b3934",
+      "bg4": "#4d4a44",
+
+      "fg0": "#faf9f5",
+      "fg": "#e8e6dc",
+      "fg1": "#c8c5b9",
+      "fg2": "#a19e94",
+      "comment": "#8a877d",
+
+      "orange": "#d97757",
+      "red": "#d16a6f",
+      "yellow": "#d5a65e",
+      "green": "#99a874",
+      "aqua": "#82aa9c",
+      "blue": "#7fa3cc",
+      "purple": "#ae92b8",
+
+      "bright_orange": "#e58d6f",
+      "bright_red": "#e0858a",
+      "bright_yellow": "#e3ba79",
+      "bright_green": "#adbb8a",
+      "bright_aqua": "#9abfb1",
+      "bright_blue": "#98b7d9",
+      "bright_purple": "#c2a8cb",
+
+      "accent": "#d97757",
+      "error": "#d16a6f",
+      "warning": "#d5a65e",
+      "info": "#7fa3cc",
+      "hint": "#82aa9c",
+      "git_added": "#99a874",
+      "git_modified": "#d5a65e",
+      "git_removed": "#d16a6f"
+    }
+  }
+}

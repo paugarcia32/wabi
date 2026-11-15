@@ -1,0 +1,82 @@
+#!/usr/bin/env node
+// Renders every `*.tmpl` file under ports/ once per palette variant.
+//
+//   {{key}}        -> colour value from the variant, e.g. "#1b1a18"
+//   {{key.hex}}    -> colour without the leading "#", e.g. "1b1a18"
+//   {{variant}}    -> variant id, e.g. "dark"
+//   {{Variant}}    -> capitalised variant id, e.g. "Dark"
+//   {{name}}       -> palette name, e.g. "Wabi"
+//
+// The output file sits next to the template, with ".tmpl" removed and
+// "{variant}" in the file name replaced by the variant id:
+//   ports/alacritty/wabi-{variant}.toml.tmpl -> ports/alacritty/wabi-dark.toml
+//
+// Usage: node generator/build.js [--check]
+//   --check  only print the contrast report, don't write files
+
+const fs = require("fs");
+const path = require("path");
+
+const root = path.resolve(__dirname, "..");
+const palette = JSON.parse(fs.readFileSync(path.join(root, "palette", "palette.json"), "utf8"));
+
+function findTemplates(dir) {
+  return fs.readdirSync(dir, { withFileTypes: true }).flatMap((e) => {
+    const p = path.join(dir, e.name);
+    if (e.isDirectory()) return findTemplates(p);
+    return e.name.endsWith(".tmpl") ? [p] : [];
+  });
+}
+
+function render(text, vars, file) {
+  return text.replace(/\{\{\s*([\w]+)(\.hex)?\s*\}\}/g, (_, key, hex) => {
+    if (!(key in vars)) throw new Error(`${path.relative(root, file)}: unknown key "{{${key}}}"`);
+    const v = vars[key];
+    return hex ? v.replace(/^#/, "") : v;
+  });
+}
+
+// WCAG 2 contrast ratio
+function luminance(hex) {
+  const [r, g, b] = [1, 3, 5]
+    .map((i) => parseInt(hex.slice(i, i + 2), 16) / 255)
+    .map((c) => (c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4));
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+}
+function contrast(a, b) {
+  const [hi, lo] = [luminance(a), luminance(b)].sort((x, y) => y - x);
+  return (hi + 0.05) / (lo + 0.05);
+}
+
+const TEXT_KEYS = ["fg0", "fg", "fg1", "fg2", "comment", "orange", "red", "yellow", "green", "aqua", "blue", "purple"];
+const MIN_CONTRAST = 4.5;
+
+let failed = false;
+for (const [id, colours] of Object.entries(palette.variants)) {
+  console.log(`\n${palette.name} ${id} — contrast against bg0 (${colours.bg0})`);
+  for (const k of TEXT_KEYS) {
+    const ratio = contrast(colours[k], colours.bg0);
+    const ok = ratio >= MIN_CONTRAST;
+    if (!ok) failed = true;
+    console.log(`  ${ok ? "ok  " : "LOW "} ${k.padEnd(8)} ${colours[k]}  ${ratio.toFixed(2)}`);
+  }
+}
+
+if (process.argv.includes("--check")) process.exit(failed ? 1 : 0);
+
+const templates = findTemplates(path.join(root, "ports"));
+console.log("");
+for (const tmpl of templates) {
+  const source = fs.readFileSync(tmpl, "utf8");
+  for (const [id, colours] of Object.entries(palette.variants)) {
+    const vars = {
+      ...Object.fromEntries(Object.entries(colours).filter(([k]) => !k.startsWith("_"))),
+      name: palette.name,
+      variant: id,
+      Variant: id[0].toUpperCase() + id.slice(1),
+    };
+    const out = tmpl.slice(0, -".tmpl".length).replace("{variant}", id);
+    fs.writeFileSync(out, render(source, vars, tmpl));
+    console.log(`wrote ${path.relative(root, out)}`);
+  }
+}

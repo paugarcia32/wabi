@@ -1,0 +1,70 @@
+# Wabi Dark — Alacritty
+# Generated from palette/palette.json by generator/build.js. Do not edit by hand.
+
+[colors.primary]
+background = "#1b1a18"
+foreground = "#e8e6dc"
+dim_foreground = "#a19e94"
+bright_foreground = "#faf9f5"
+
+[colors.cursor]
+text = "#1b1a18"
+cursor = "#d97757"
+
+[colors.vi_mode_cursor]
+text = "#1b1a18"
+cursor = "#7fa3cc"
+
+[colors.selection]
+text = "CellForeground"
+background = "#3b3934"
+
+[colors.search.matches]
+foreground = "#1b1a18"
+background = "#d5a65e"
+
+[colors.search.focused_match]
+foreground = "#1b1a18"
+background = "#d97757"
+
+[colors.footer_bar]
+foreground = "#e8e6dc"
+background = "#2e2c28"
+
+[colors.hints.start]
+foreground = "#1b1a18"
+background = "#d5a65e"
+
+[colors.hints.end]
+foreground = "#1b1a18"
+background = "#a19e94"
+
+[colors.normal]
+black = "#2e2c28"
+red = "#d16a6f"
+green = "#99a874"
+yellow = "#d5a65e"
+blue = "#7fa3cc"
+magenta = "#ae92b8"
+cyan = "#82aa9c"
+white = "#c8c5b9"
+
+[colors.bright]
+black = "#8a877d"
+red = "#e0858a"
+green = "#adbb8a"
+yellow = "#e3ba79"
+blue = "#98b7d9"
+magenta = "#c2a8cb"
+cyan = "#9abfb1"
+white = "#faf9f5"
+
+# Orange is Wabi's signature colour but has no ANSI slot; expose it on index 16
+# so prompts and tools can use it via 256-colour codes.
+[[colors.indexed_colors]]
+index = 16
+color = "#d97757"
+
+[[colors.indexed_colors]]
+index = 17
+color = "#e58d6f"

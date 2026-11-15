@@ -1,0 +1,70 @@
+# {{name}} {{Variant}} — Alacritty
+# Generated from palette/palette.json by generator/build.js. Do not edit by hand.
+
+[colors.primary]
+background = "{{bg0}}"
+foreground = "{{fg}}"
+dim_foreground = "{{fg2}}"
+bright_foreground = "{{fg0}}"
+
+[colors.cursor]
+text = "{{bg0}}"
+cursor = "{{orange}}"
+
+[colors.vi_mode_cursor]
+text = "{{bg0}}"
+cursor = "{{blue}}"
+
+[colors.selection]
+text = "CellForeground"
+background = "{{bg3}}"
+
+[colors.search.matches]
+foreground = "{{bg0}}"
+background = "{{yellow}}"
+
+[colors.search.focused_match]
+foreground = "{{bg0}}"
+background = "{{orange}}"
+
+[colors.footer_bar]
+foreground = "{{fg}}"
+background = "{{bg2}}"
+
+[colors.hints.start]
+foreground = "{{bg0}}"
+background = "{{yellow}}"
+
+[colors.hints.end]
+foreground = "{{bg0}}"
+background = "{{fg2}}"
+
+[colors.normal]
+black = "{{bg2}}"
+red = "{{red}}"
+green = "{{green}}"
+yellow = "{{yellow}}"
+blue = "{{blue}}"
+magenta = "{{purple}}"
+cyan = "{{aqua}}"
+white = "{{fg1}}"
+
+[colors.bright]
+black = "{{comment}}"
+red = "{{bright_red}}"
+green = "{{bright_green}}"
+yellow = "{{bright_yellow}}"
+blue = "{{bright_blue}}"
+magenta = "{{bright_purple}}"
+cyan = "{{bright_aqua}}"
+white = "{{fg0}}"
+
+# Orange is Wabi's signature colour but has no ANSI slot; expose it on index 16
+# so prompts and tools can use it via 256-colour codes.
+[[colors.indexed_colors]]
+index = 16
+color = "{{orange}}"
+
+[[colors.indexed_colors]]
+index = 17
+color = "{{bright_orange}}"
