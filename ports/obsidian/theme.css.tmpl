@@ -1,0 +1,134 @@
+/*
+ * {{name}} for Obsidian, in dark and light.
+ * Generated from palette/palette.json by generator/build.js. Do not edit by hand.
+ */
+{{#each_variant}}
+/* ---- {{name}} {{Variant}} ---- */
+.theme-{{variant}} {
+  /* Base scale: Obsidian derives most backgrounds, borders and text from these. */
+  --color-base-00: {{bg0}};
+  --color-base-05: {{bg1}};
+  --color-base-10: {{bg1}};
+  --color-base-20: {{bg0}};
+  --color-base-25: {{bg2}};
+  --color-base-30: {{bg3}};
+  --color-base-35: {{bg3}};
+  --color-base-40: {{bg4}};
+  --color-base-50: {{comment}};
+  --color-base-60: {{fg2}};
+  --color-base-70: {{fg1}};
+  --color-base-100: {{fg}};
+
+  /* Extended palette */
+  --color-red: {{red}};
+  --color-red-rgb: {{red.rgb}};
+  --color-orange: {{orange}};
+  --color-orange-rgb: {{orange.rgb}};
+  --color-yellow: {{yellow}};
+  --color-yellow-rgb: {{yellow.rgb}};
+  --color-green: {{green}};
+  --color-green-rgb: {{green.rgb}};
+  --color-cyan: {{aqua}};
+  --color-cyan-rgb: {{aqua.rgb}};
+  --color-blue: {{blue}};
+  --color-blue-rgb: {{blue.rgb}};
+  --color-purple: {{purple}};
+  --color-purple-rgb: {{purple.rgb}};
+  --color-pink: {{bright_purple}};
+  --color-pink-rgb: {{bright_purple.rgb}};
+
+  /* Accent */
+  --color-accent: {{orange}};
+  --color-accent-1: {{bright_orange}};
+  --color-accent-2: {{bright_orange}};
+  --interactive-accent: {{orange}};
+  --interactive-accent-hover: {{bright_orange}};
+  --text-on-accent: {{bg0}};
+
+  /* Surfaces: sidebars share the editor background; only the divider separates them. */
+  --background-primary: {{bg0}};
+  --background-primary-alt: {{bg1}};
+  --background-secondary: {{bg0}};
+  --background-secondary-alt: {{bg1}};
+  --background-modifier-border: {{bg3}};
+  --background-modifier-border-hover: {{bg4}};
+  --background-modifier-border-focus: {{orange}};
+  --background-modifier-hover: rgba({{fg2.rgb}}, 0.12);
+  --background-modifier-active-hover: rgba({{orange.rgb}}, 0.15);
+  --background-modifier-error: {{error}};
+  --background-modifier-success: {{green}};
+  --titlebar-background: {{bg0}};
+  --titlebar-background-focused: {{bg0}};
+  --divider-color: {{bg2}};
+
+  /* Text */
+  --text-normal: {{fg}};
+  --text-muted: {{fg2}};
+  --text-faint: {{comment}};
+  --text-accent: {{orange}};
+  --text-accent-hover: {{bright_orange}};
+  --text-error: {{error}};
+  --text-warning: {{warning}};
+  --text-success: {{green}};
+  --text-selection: rgba({{orange.rgb}}, 0.2);
+  --text-highlight-bg: rgba({{yellow.rgb}}, 0.25);
+  --text-highlight-bg-active: rgba({{orange.rgb}}, 0.35);
+  --caret-color: {{orange}};
+
+  /* Headings */
+  --h1-color: {{orange}};
+  --h2-color: {{fg0}};
+  --h3-color: {{fg0}};
+  --h4-color: {{fg0}};
+  --h5-color: {{fg1}};
+  --h6-color: {{fg1}};
+  --inline-title-color: {{fg0}};
+
+  /* Links and tags */
+  --link-color: {{blue}};
+  --link-color-hover: {{bright_blue}};
+  --link-external-color: {{blue}};
+  --link-external-color-hover: {{bright_blue}};
+  --link-unresolved-color: {{fg2}};
+  --link-unresolved-decoration-color: rgba({{fg2.rgb}}, 0.4);
+  --tag-color: {{aqua}};
+  --tag-color-hover: {{bright_aqua}};
+  --tag-background: rgba({{aqua.rgb}}, 0.1);
+  --tag-background-hover: rgba({{aqua.rgb}}, 0.18);
+  --tag-border-color: rgba({{aqua.rgb}}, 0.2);
+
+  /* Blocks */
+  --blockquote-border-color: {{orange}};
+  --hr-color: {{bg3}};
+  --checkbox-color: {{orange}};
+  --checkbox-color-hover: {{bright_orange}};
+  --checkbox-marker-color: {{bg0}};
+  --checkbox-border-color: {{comment}};
+  --list-marker-color: {{fg2}};
+  --list-marker-color-hover: {{orange}};
+  --table-border-color: {{bg3}};
+  --table-header-background: {{bg1}};
+
+  /* Code */
+  --code-background: {{bg1}};
+  --code-normal: {{fg}};
+  --code-comment: {{comment}};
+  --code-function: {{blue}};
+  --code-important: {{orange}};
+  --code-keyword: {{orange}};
+  --code-operator: {{fg1}};
+  --code-property: {{fg1}};
+  --code-punctuation: {{fg2}};
+  --code-string: {{green}};
+  --code-tag: {{orange}};
+  --code-value: {{purple}};
+
+  /* Graph view */
+  --graph-node: {{fg2}};
+  --graph-node-unresolved: {{comment}};
+  --graph-node-focused: {{orange}};
+  --graph-node-tag: {{aqua}};
+  --graph-node-attachment: {{yellow}};
+  --graph-line: {{bg3}};
+}
+{{/each_variant}}

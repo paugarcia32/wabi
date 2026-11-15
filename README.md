@@ -42,7 +42,7 @@ In both variants, all text colours meet WCAG AA (≥ 4.5:1) against `bg0`.
 | [Zed](ports/zed) | ✅ |
 | [VSCode / Cursor](ports/vscode) | ✅ |
 | Nvim | planned |
-| Obsidian | planned |
+| [Obsidian](ports/obsidian) | ✅ |
 
 ## Structure
 
