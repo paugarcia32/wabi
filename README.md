@@ -80,7 +80,7 @@ Every colour of both variants lives in [`palette/palette.json`](palette/palette.
 | [Alacritty](ports/alacritty) | Dark, Light | [Instructions](ports/alacritty/README.md) |
 | [Zed](ports/zed) | Dark, Light | [Instructions](ports/zed/README.md) |
 | [VSCode / Cursor](ports/vscode) | Dark, Light | [Instructions](ports/vscode/README.md) |
-| [Obsidian](ports/obsidian) | Dark, Light | [Instructions](ports/obsidian/README.md) |
+| [Obsidian](ports/obsidian) | Dark, Light | Community theme store: search **Wabi** ([details](ports/obsidian/README.md)) |
 | Neovim | | Planned |
 
 Missing your app? [Request a port](https://github.com/paugarcia32/wabi/issues/new?template=port_request.yml), or build it yourself with the guide to [creating a port](docs/port-creation.md).
