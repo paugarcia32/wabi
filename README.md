@@ -66,7 +66,7 @@ Never edit generated files by hand: change `palette/palette.json` or a `.tmpl` t
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) and the [Code of Conduct](CODE_OF_CONDUCT.md).
+See [CONTRIBUTING.md](CONTRIBUTING.md) and the [Code of Conduct](CODE_OF_CONDUCT.md). The [docs](docs) have the [style guide](docs/style-guide.md) and a guide to [creating a port](docs/port-creation.md).
 
 ## License
 
